@@ -3,6 +3,7 @@
 // -name of males in your class
 // -name of your class instructors 
 
+<<<<<<< HEAD
 var females = ["hania", "lina", "insaf", "ons", "fooz", "houda", "ruba", "fatima", "amera"];
 var males = ["ahmed", "omar", "farouk", "mohamed", "anass"];
 var instructors = ["seif", "tamara", "youssef", "matt"]
@@ -29,3 +30,8 @@ function multyOfTwo (array) {
 	}
 	return arr;
 }
+=======
+// 2-write a function that takes an array as an argument and returns the element that is located in the middle of that array.
+
+// 3-Change all the numbers in the array to be multiplied by two for even indexes.
+>>>>>>> bc4abbbe44759eb1f72f2abcc0629fd792b435cd
