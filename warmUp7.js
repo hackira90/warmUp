@@ -26,7 +26,7 @@ function average(arr){
 	return "The average age is : " + (m / arr.length); 
 }
 
-average(ages); // => "The average ages is : 15.1"
+average(ages); // => "The average ages is : 15.1".
 // 4-calculate your age in seconds.
 
 function ages(n) {
@@ -35,3 +35,5 @@ function ages(n) {
 }
 
 ages(28); // => "Your age in secondes is : 883008000"
+
+
