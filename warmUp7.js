@@ -13,7 +13,7 @@ function multiple(n) {
 	return n + ' is not a multiple of 3';
 }
 
-multiple(13); //=> "13 is not a multiple of 3"
+multiple(13); //=> "13 is not a multiple of 3".
 
 // 3-calculate the average age of the follwing ages [13,14,13,15,16,17,19,13,16,15]
 
