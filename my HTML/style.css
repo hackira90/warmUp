@@ -1,0 +1,16 @@
+
+
+body {
+	background-color : blue;
+	
+}
+
+#button1 {
+
+	font-family: serif;
+}
+
+#button2 {
+
+	font-family: inherit;
+}
