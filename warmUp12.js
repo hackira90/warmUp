@@ -22,3 +22,58 @@ Technical Details
     -The maximum size of a range will be 100 integers
     -The starting number of a range will be: 0 < n < 100
  */
+
+
+ // function sort(str, n) {
+ //    //var min = ;
+ //    //var max = ;
+ //    var arr = [];
+ //    for (var i = 0; i < n; i++){
+ //        if(str[i] = 1){
+ //        arr.push(str[i], str[i + 1]);
+ //    }
+ //    }
+ //    return arr;
+ // }
+
+
+ ///////////////
+function sort(str, n) {
+    var arr = [];
+    var acc = [];
+    var maxi = [];
+    var mini = [];
+    var result = [];
+    for (var i = 0; i < n; i++){
+        if(str[i] == 1){
+        arr.push(str[i],str[i + 1]);
+        i++;
+        }else{
+        arr[i]=str[i]
+}
+    
+    }
+
+    for (var j = 0; j < arr.length; j++){
+        if (arr[j] == 1){
+        acc[j]=arr[j]+arr[j + 1];
+        }else{
+        acc[j]=arr[j]
+    }
+
+    }
+
+    for (var k = 1; k < arr.length; k++){
+        var max = acc[0];
+        var min = acc[0];
+        if (arr[k] > max){
+            maxi = max;
+             } else { 
+            mini = min }
+        
+        result.push(min,max) 
+    }
+
+    return result;
+
+ }
