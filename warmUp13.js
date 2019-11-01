@@ -31,3 +31,53 @@
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 */
+
+//Q-1 
+//function convert Modern Roman to integer
+
+function convert(n) {
+  var k = 1;
+  var V = 0;
+  var I = 0;
+  var X = 0;
+  var L = 0;
+  var C = 0;
+  var D = 0;
+  var M = 0;
+  var arr = n.split('');
+  var rom = ["I", "V", "X", "L", "C", "D", "M"];
+  //itératre over an array to get number of duplicated Roman numvber
+  for (var i = 0; i < arr.length; i++) {
+
+      if(arr[i] === arr[i + 1]) {
+      k++;
+   }
+    //itératre over an array to get the Roman numvber
+    for (var j = 0; j < rom.length; j++) {
+      if ("I" === arr[i] ){
+        I = 1 * k;
+      } else if("V" === arr[i] )  { 
+       V = 5 * k;
+  }
+      else if("X" === arr[i] )  {
+        X = 10 * k;
+  } else if("L" === arr[i] )  {
+        L = 50 * k;
+  } else if("C" === arr[i] )  {
+        C = 100 * k;
+  } else if("D" === arr[i] )  {
+        D = 500 * k;
+    } else if ( "M" === arr[i] )
+      M = 1000 * k;
+  }
+    
+  }
+
+  return X + V + I + L + D + C + M;
+}
+
+
+
+//////////Q-3
+
+function 
