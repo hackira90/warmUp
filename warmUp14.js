@@ -43,6 +43,10 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 		  	} else if(prices[i + 1] > prices[i] ) {
 		  		 max = prices[i+1]
 		  		 prices.splice(i,1);
+		  		 for (var j = 1; j < prices.length; j++) {
+		  		 	if ( prices[j + 1] > prices[j]){
+		  		 		max = prices[j + 1];
+		  		 	}
 		  	} 
 		  	}
 		  return max - min;
