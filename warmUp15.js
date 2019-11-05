@@ -4,3 +4,15 @@
 //
 //
 // Note : you can`t use any built-in functions .
+
+function reversed(str) {
+	var st = "";
+	var k = str.length;
+	var j = 0;
+	for (var i = k; i< 0 ; i--) {
+
+		st[j]+=str[i]
+		j++;
+	}
+	return st;
+}
