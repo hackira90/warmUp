@@ -27,6 +27,29 @@
 
 // ​
 // ​
-// var calculateTime = function(keyboard, word) {
-    
-// };
+ var calculateTime = function(keyboard, word) {
+
+	var char = word.split('');
+	var index = 0;
+	var index2 = 0;
+	var res = 0;
+	if (keyboard.length !== 26){
+		return "please enter new keyboard with 26 character";
+	}     
+	if ( word.length === 0) {
+		return "please enter a word with at least 1 character";
+	}
+	for (var i = 0; i < keyboard.length; i++) {
+		for (var j = 0; j < char.length; j++) {
+			if(char[j] === keyboard[i]){
+				index = i;
+				if(char[j + 1 ] === keyboard[i]){
+				index2 = i;
+				
+		}
+		}
+	 	res = index2 - index; 
+	 } 
+	 return res;
+ };
+
